@@ -73,48 +73,35 @@
   <div class="calculator">
     <input type="text" class="display" id="display" readonly>
     <div class="row">
-      <div class="button number" onclick="appendToDisplay('7')">7</div>
-      <div class="button number" onclick="appendToDisplay('8')">8</div>
-      <div class="button number" onclick="appendToDisplay('9')">9</div>
-      <div class="button operator" onclick="appendToDisplay('/')">÷</div>
+      <div class="button number" >7</div>
+      <div class="button number" >8</div>
+      <div class="button number" >9</div>
+      <div class="button operator">÷</div>
     </div>
     <div class="row">
-      <div class="button number" onclick="appendToDisplay('4')">4</div>
-      <div class="button number" onclick="appendToDisplay('5')">5</div>
-      <div class="button number" onclick="appendToDisplay('6')">6</div>
-      <div class="button operator" onclick="appendToDisplay('*')">x</div>
+      <div class="button number" >4</div>
+      <div class="button number" >5</div>
+      <div class="button number" >6</div>
+      <div class="button operator" >x</div>
     </div>
     <div class="row">
-      <div class="button number" onclick="appendToDisplay('1')">1</div>
-      <div class="button number" onclick="appendToDisplay('2')">2</div>
-      <div class="button number" onclick="appendToDisplay('3')">3</div>
-      <div class="button operator" onclick="appendToDisplay('-')">-</div>
+      <div class="button number" >1</div>
+      <div class="button number" >2</div>
+      <div class="button number" >3</div>
+      <div class="button operator" >-</div>
     </div>
     <div class="row">
-      <div class="button number" onclick="appendToDisplay('0')">0</div>
-      <div class="button decimal" onclick="appendToDisplay('.')">.</div>
-      <div class="button equal" onclick="calculate()">=</div>
-      <div class="button operator" onclick="appendToDisplay('+')">+</div>
+      <div class="button number" >0</div>
+      <div class="button decimal" >.</div>
+      <div class="button equal" >=</div>
+      <div class="button operator" >+</div>
     </div>
     <div class="row">
-      <div class="button clear" onclick="clearDisplay()">C</div>
+      <div class="button clear" >C</div>
     </div>
   </div>
   
-  <script>
-  function appendToDisplay(value) {
-    document.getElementById('display').value += value;
-  }
-  
-  function calculate() {
-    var display = document.getElementById('display');
-    display.value = eval(display.value);
-  }
-  
-  function clearDisplay() {
-    document.getElementById('display').value = '';
-  }
-  </script>
+
   
 </body>
 </html>
